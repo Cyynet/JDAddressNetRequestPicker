@@ -1,0 +1,723 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		61E78B341F2D8E1A00CCA7CD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 61E78B331F2D8E1A00CCA7CD /* main.m */; };
+		61E78B371F2D8E1A00CCA7CD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 61E78B361F2D8E1A00CCA7CD /* AppDelegate.m */; };
+		61E78B3A1F2D8E1A00CCA7CD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61E78B391F2D8E1A00CCA7CD /* ViewController.m */; };
+		61E78B3D1F2D8E1A00CCA7CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61E78B3B1F2D8E1A00CCA7CD /* Main.storyboard */; };
+		61E78B3F1F2D8E1A00CCA7CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61E78B3E1F2D8E1A00CCA7CD /* Assets.xcassets */; };
+		61E78B421F2D8E1A00CCA7CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61E78B401F2D8E1A00CCA7CD /* LaunchScreen.storyboard */; };
+		61E78B4D1F2D8E1A00CCA7CD /* JDAddressNetRequestPickerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 61E78B4C1F2D8E1A00CCA7CD /* JDAddressNetRequestPickerTests.m */; };
+		61E78B581F2D8E1A00CCA7CD /* JDAddressNetRequestPickerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 61E78B571F2D8E1A00CCA7CD /* JDAddressNetRequestPickerUITests.m */; };
+		61E78B6A1F2DA65300CCA7CD /* NSObject+ObjectMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 61E78B691F2DA65300CCA7CD /* NSObject+ObjectMap.m */; };
+		61E78B6D1F2DA83200CCA7CD /* UIView+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 61E78B6C1F2DA83200CCA7CD /* UIView+Common.m */; };
+		61E78B801F2DA87C00CCA7CD /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 61E78B701F2DA87C00CCA7CD /* SVIndefiniteAnimatedView.m */; };
+		61E78B811F2DA87C00CCA7CD /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 61E78B721F2DA87C00CCA7CD /* SVProgressHUD.bundle */; };
+		61E78B821F2DA87C00CCA7CD /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 61E78B741F2DA87C00CCA7CD /* SVProgressHUD.m */; };
+		61E78B831F2DA87C00CCA7CD /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 61E78B761F2DA87C00CCA7CD /* SVRadialGradientLayer.m */; };
+		61E78B841F2DA87C00CCA7CD /* TPKeyboardAvoidingCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 61E78B791F2DA87C00CCA7CD /* TPKeyboardAvoidingCollectionView.m */; };
+		61E78B851F2DA87C00CCA7CD /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 61E78B7B1F2DA87C00CCA7CD /* TPKeyboardAvoidingScrollView.m */; };
+		61E78B861F2DA87C00CCA7CD /* TPKeyboardAvoidingTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 61E78B7D1F2DA87C00CCA7CD /* TPKeyboardAvoidingTableView.m */; };
+		61E78B871F2DA87C00CCA7CD /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 61E78B7F1F2DA87C00CCA7CD /* UIScrollView+TPKeyboardAvoidingAdditions.m */; };
+		61E78B8D1F2DA91200CCA7CD /* TXLAddrObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 61E78B8C1F2DA91200CCA7CD /* TXLAddrObject.m */; };
+		61E78B901F2DA92700CCA7CD /* TXLAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = 61E78B8F1F2DA92700CCA7CD /* TXLAddress.m */; };
+		61E78B931F2DA96300CCA7CD /* TXLAddressPickCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 61E78B921F2DA96300CCA7CD /* TXLAddressPickCell.m */; };
+		61E78B961F2DA9D800CCA7CD /* TXLTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 61E78B951F2DA9D800CCA7CD /* TXLTableCell.m */; };
+		61E78B991F2DABE300CCA7CD /* TXLAddressPickView.m in Sources */ = {isa = PBXBuildFile; fileRef = 61E78B981F2DABE300CCA7CD /* TXLAddressPickView.m */; };
+		61E78B9C1F2DAC1C00CCA7CD /* TXLAddressPickTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 61E78B9B1F2DAC1C00CCA7CD /* TXLAddressPickTableView.m */; };
+		61E78B9F1F2DAC7500CCA7CD /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 61E78B9E1F2DAC7500CCA7CD /* UIView+Frame.m */; };
+		61E78BA21F2DACBC00CCA7CD /* UILabel+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 61E78BA11F2DACBC00CCA7CD /* UILabel+Common.m */; };
+		61E78BA51F2DACF200CCA7CD /* NSString+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 61E78BA41F2DACF200CCA7CD /* NSString+Common.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		61E78B491F2D8E1A00CCA7CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 61E78B271F2D8E1A00CCA7CD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 61E78B2E1F2D8E1A00CCA7CD;
+			remoteInfo = JDAddressNetRequestPicker;
+		};
+		61E78B541F2D8E1A00CCA7CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 61E78B271F2D8E1A00CCA7CD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 61E78B2E1F2D8E1A00CCA7CD;
+			remoteInfo = JDAddressNetRequestPicker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		61E78B2F1F2D8E1A00CCA7CD /* JDAddressNetRequestPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JDAddressNetRequestPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		61E78B331F2D8E1A00CCA7CD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		61E78B351F2D8E1A00CCA7CD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		61E78B361F2D8E1A00CCA7CD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		61E78B381F2D8E1A00CCA7CD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		61E78B391F2D8E1A00CCA7CD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		61E78B3C1F2D8E1A00CCA7CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		61E78B3E1F2D8E1A00CCA7CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		61E78B411F2D8E1A00CCA7CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		61E78B431F2D8E1A00CCA7CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		61E78B481F2D8E1A00CCA7CD /* JDAddressNetRequestPickerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JDAddressNetRequestPickerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		61E78B4C1F2D8E1A00CCA7CD /* JDAddressNetRequestPickerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDAddressNetRequestPickerTests.m; sourceTree = "<group>"; };
+		61E78B4E1F2D8E1A00CCA7CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		61E78B531F2D8E1A00CCA7CD /* JDAddressNetRequestPickerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JDAddressNetRequestPickerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		61E78B571F2D8E1A00CCA7CD /* JDAddressNetRequestPickerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDAddressNetRequestPickerUITests.m; sourceTree = "<group>"; };
+		61E78B591F2D8E1A00CCA7CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		61E78B681F2DA65300CCA7CD /* NSObject+ObjectMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+ObjectMap.h"; sourceTree = "<group>"; };
+		61E78B691F2DA65300CCA7CD /* NSObject+ObjectMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ObjectMap.m"; sourceTree = "<group>"; };
+		61E78B6B1F2DA83200CCA7CD /* UIView+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Common.h"; sourceTree = "<group>"; };
+		61E78B6C1F2DA83200CCA7CD /* UIView+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Common.m"; sourceTree = "<group>"; };
+		61E78B6F1F2DA87C00CCA7CD /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
+		61E78B701F2DA87C00CCA7CD /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
+		61E78B711F2DA87C00CCA7CD /* SVProgressHUD-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-Prefix.pch"; sourceTree = "<group>"; };
+		61E78B721F2DA87C00CCA7CD /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
+		61E78B731F2DA87C00CCA7CD /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
+		61E78B741F2DA87C00CCA7CD /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
+		61E78B751F2DA87C00CCA7CD /* SVRadialGradientLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVRadialGradientLayer.h; sourceTree = "<group>"; };
+		61E78B761F2DA87C00CCA7CD /* SVRadialGradientLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVRadialGradientLayer.m; sourceTree = "<group>"; };
+		61E78B781F2DA87C00CCA7CD /* TPKeyboardAvoidingCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingCollectionView.h; sourceTree = "<group>"; };
+		61E78B791F2DA87C00CCA7CD /* TPKeyboardAvoidingCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingCollectionView.m; sourceTree = "<group>"; };
+		61E78B7A1F2DA87C00CCA7CD /* TPKeyboardAvoidingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingScrollView.h; sourceTree = "<group>"; };
+		61E78B7B1F2DA87C00CCA7CD /* TPKeyboardAvoidingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingScrollView.m; sourceTree = "<group>"; };
+		61E78B7C1F2DA87C00CCA7CD /* TPKeyboardAvoidingTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingTableView.h; sourceTree = "<group>"; };
+		61E78B7D1F2DA87C00CCA7CD /* TPKeyboardAvoidingTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingTableView.m; sourceTree = "<group>"; };
+		61E78B7E1F2DA87C00CCA7CD /* UIScrollView+TPKeyboardAvoidingAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+TPKeyboardAvoidingAdditions.h"; sourceTree = "<group>"; };
+		61E78B7F1F2DA87C00CCA7CD /* UIScrollView+TPKeyboardAvoidingAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+TPKeyboardAvoidingAdditions.m"; sourceTree = "<group>"; };
+		61E78B8B1F2DA91200CCA7CD /* TXLAddrObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXLAddrObject.h; sourceTree = "<group>"; };
+		61E78B8C1F2DA91200CCA7CD /* TXLAddrObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXLAddrObject.m; sourceTree = "<group>"; };
+		61E78B8E1F2DA92700CCA7CD /* TXLAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXLAddress.h; sourceTree = "<group>"; };
+		61E78B8F1F2DA92700CCA7CD /* TXLAddress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXLAddress.m; sourceTree = "<group>"; };
+		61E78B911F2DA96300CCA7CD /* TXLAddressPickCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXLAddressPickCell.h; sourceTree = "<group>"; };
+		61E78B921F2DA96300CCA7CD /* TXLAddressPickCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXLAddressPickCell.m; sourceTree = "<group>"; };
+		61E78B941F2DA9D800CCA7CD /* TXLTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXLTableCell.h; sourceTree = "<group>"; };
+		61E78B951F2DA9D800CCA7CD /* TXLTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXLTableCell.m; sourceTree = "<group>"; };
+		61E78B971F2DABE300CCA7CD /* TXLAddressPickView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXLAddressPickView.h; sourceTree = "<group>"; };
+		61E78B981F2DABE300CCA7CD /* TXLAddressPickView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXLAddressPickView.m; sourceTree = "<group>"; };
+		61E78B9A1F2DAC1C00CCA7CD /* TXLAddressPickTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXLAddressPickTableView.h; sourceTree = "<group>"; };
+		61E78B9B1F2DAC1C00CCA7CD /* TXLAddressPickTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXLAddressPickTableView.m; sourceTree = "<group>"; };
+		61E78B9D1F2DAC7500CCA7CD /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		61E78B9E1F2DAC7500CCA7CD /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		61E78BA01F2DACBC00CCA7CD /* UILabel+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Common.h"; sourceTree = "<group>"; };
+		61E78BA11F2DACBC00CCA7CD /* UILabel+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Common.m"; sourceTree = "<group>"; };
+		61E78BA31F2DACF200CCA7CD /* NSString+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Common.h"; sourceTree = "<group>"; };
+		61E78BA41F2DACF200CCA7CD /* NSString+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Common.m"; sourceTree = "<group>"; };
+		61E78BA61F2DAD4500CCA7CD /* PrefixHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		61E78B2C1F2D8E1A00CCA7CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61E78B451F2D8E1A00CCA7CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61E78B501F2D8E1A00CCA7CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		61E78B261F2D8E1A00CCA7CD = {
+			isa = PBXGroup;
+			children = (
+				61E78B311F2D8E1A00CCA7CD /* JDAddressNetRequestPicker */,
+				61E78B4B1F2D8E1A00CCA7CD /* JDAddressNetRequestPickerTests */,
+				61E78B561F2D8E1A00CCA7CD /* JDAddressNetRequestPickerUITests */,
+				61E78B301F2D8E1A00CCA7CD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		61E78B301F2D8E1A00CCA7CD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				61E78B2F1F2D8E1A00CCA7CD /* JDAddressNetRequestPicker.app */,
+				61E78B481F2D8E1A00CCA7CD /* JDAddressNetRequestPickerTests.xctest */,
+				61E78B531F2D8E1A00CCA7CD /* JDAddressNetRequestPickerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		61E78B311F2D8E1A00CCA7CD /* JDAddressNetRequestPicker */ = {
+			isa = PBXGroup;
+			children = (
+				61E78BA61F2DAD4500CCA7CD /* PrefixHeader.h */,
+				61E78B651F2DA5FD00CCA7CD /* Categorys */,
+				61E78B661F2DA5FD00CCA7CD /* framework */,
+				61E78B671F2DA5FD00CCA7CD /* JDAddressNetRequestPicker */,
+				61E78B351F2D8E1A00CCA7CD /* AppDelegate.h */,
+				61E78B361F2D8E1A00CCA7CD /* AppDelegate.m */,
+				61E78B381F2D8E1A00CCA7CD /* ViewController.h */,
+				61E78B391F2D8E1A00CCA7CD /* ViewController.m */,
+				61E78B3B1F2D8E1A00CCA7CD /* Main.storyboard */,
+				61E78B3E1F2D8E1A00CCA7CD /* Assets.xcassets */,
+				61E78B401F2D8E1A00CCA7CD /* LaunchScreen.storyboard */,
+				61E78B431F2D8E1A00CCA7CD /* Info.plist */,
+				61E78B321F2D8E1A00CCA7CD /* Supporting Files */,
+			);
+			path = JDAddressNetRequestPicker;
+			sourceTree = "<group>";
+		};
+		61E78B321F2D8E1A00CCA7CD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				61E78B331F2D8E1A00CCA7CD /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		61E78B4B1F2D8E1A00CCA7CD /* JDAddressNetRequestPickerTests */ = {
+			isa = PBXGroup;
+			children = (
+				61E78B4C1F2D8E1A00CCA7CD /* JDAddressNetRequestPickerTests.m */,
+				61E78B4E1F2D8E1A00CCA7CD /* Info.plist */,
+			);
+			path = JDAddressNetRequestPickerTests;
+			sourceTree = "<group>";
+		};
+		61E78B561F2D8E1A00CCA7CD /* JDAddressNetRequestPickerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				61E78B571F2D8E1A00CCA7CD /* JDAddressNetRequestPickerUITests.m */,
+				61E78B591F2D8E1A00CCA7CD /* Info.plist */,
+			);
+			path = JDAddressNetRequestPickerUITests;
+			sourceTree = "<group>";
+		};
+		61E78B651F2DA5FD00CCA7CD /* Categorys */ = {
+			isa = PBXGroup;
+			children = (
+				61E78B681F2DA65300CCA7CD /* NSObject+ObjectMap.h */,
+				61E78B691F2DA65300CCA7CD /* NSObject+ObjectMap.m */,
+				61E78B6B1F2DA83200CCA7CD /* UIView+Common.h */,
+				61E78B6C1F2DA83200CCA7CD /* UIView+Common.m */,
+				61E78B9D1F2DAC7500CCA7CD /* UIView+Frame.h */,
+				61E78B9E1F2DAC7500CCA7CD /* UIView+Frame.m */,
+				61E78BA01F2DACBC00CCA7CD /* UILabel+Common.h */,
+				61E78BA11F2DACBC00CCA7CD /* UILabel+Common.m */,
+				61E78BA31F2DACF200CCA7CD /* NSString+Common.h */,
+				61E78BA41F2DACF200CCA7CD /* NSString+Common.m */,
+			);
+			path = Categorys;
+			sourceTree = "<group>";
+		};
+		61E78B661F2DA5FD00CCA7CD /* framework */ = {
+			isa = PBXGroup;
+			children = (
+				61E78B6E1F2DA87C00CCA7CD /* SVProgressHUD */,
+				61E78B771F2DA87C00CCA7CD /* TPKeyboardAvoiding */,
+			);
+			path = framework;
+			sourceTree = "<group>";
+		};
+		61E78B671F2DA5FD00CCA7CD /* JDAddressNetRequestPicker */ = {
+			isa = PBXGroup;
+			children = (
+				61E78B8A1F2DA8D200CCA7CD /* views */,
+				61E78B881F2DA8D200CCA7CD /* cells */,
+				61E78B891F2DA8D200CCA7CD /* models */,
+			);
+			path = JDAddressNetRequestPicker;
+			sourceTree = "<group>";
+		};
+		61E78B6E1F2DA87C00CCA7CD /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				61E78B6F1F2DA87C00CCA7CD /* SVIndefiniteAnimatedView.h */,
+				61E78B701F2DA87C00CCA7CD /* SVIndefiniteAnimatedView.m */,
+				61E78B711F2DA87C00CCA7CD /* SVProgressHUD-Prefix.pch */,
+				61E78B721F2DA87C00CCA7CD /* SVProgressHUD.bundle */,
+				61E78B731F2DA87C00CCA7CD /* SVProgressHUD.h */,
+				61E78B741F2DA87C00CCA7CD /* SVProgressHUD.m */,
+				61E78B751F2DA87C00CCA7CD /* SVRadialGradientLayer.h */,
+				61E78B761F2DA87C00CCA7CD /* SVRadialGradientLayer.m */,
+			);
+			path = SVProgressHUD;
+			sourceTree = "<group>";
+		};
+		61E78B771F2DA87C00CCA7CD /* TPKeyboardAvoiding */ = {
+			isa = PBXGroup;
+			children = (
+				61E78B781F2DA87C00CCA7CD /* TPKeyboardAvoidingCollectionView.h */,
+				61E78B791F2DA87C00CCA7CD /* TPKeyboardAvoidingCollectionView.m */,
+				61E78B7A1F2DA87C00CCA7CD /* TPKeyboardAvoidingScrollView.h */,
+				61E78B7B1F2DA87C00CCA7CD /* TPKeyboardAvoidingScrollView.m */,
+				61E78B7C1F2DA87C00CCA7CD /* TPKeyboardAvoidingTableView.h */,
+				61E78B7D1F2DA87C00CCA7CD /* TPKeyboardAvoidingTableView.m */,
+				61E78B7E1F2DA87C00CCA7CD /* UIScrollView+TPKeyboardAvoidingAdditions.h */,
+				61E78B7F1F2DA87C00CCA7CD /* UIScrollView+TPKeyboardAvoidingAdditions.m */,
+			);
+			path = TPKeyboardAvoiding;
+			sourceTree = "<group>";
+		};
+		61E78B881F2DA8D200CCA7CD /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				61E78B911F2DA96300CCA7CD /* TXLAddressPickCell.h */,
+				61E78B921F2DA96300CCA7CD /* TXLAddressPickCell.m */,
+				61E78B941F2DA9D800CCA7CD /* TXLTableCell.h */,
+				61E78B951F2DA9D800CCA7CD /* TXLTableCell.m */,
+			);
+			path = cells;
+			sourceTree = "<group>";
+		};
+		61E78B891F2DA8D200CCA7CD /* models */ = {
+			isa = PBXGroup;
+			children = (
+				61E78B8B1F2DA91200CCA7CD /* TXLAddrObject.h */,
+				61E78B8C1F2DA91200CCA7CD /* TXLAddrObject.m */,
+				61E78B8E1F2DA92700CCA7CD /* TXLAddress.h */,
+				61E78B8F1F2DA92700CCA7CD /* TXLAddress.m */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		61E78B8A1F2DA8D200CCA7CD /* views */ = {
+			isa = PBXGroup;
+			children = (
+				61E78B971F2DABE300CCA7CD /* TXLAddressPickView.h */,
+				61E78B981F2DABE300CCA7CD /* TXLAddressPickView.m */,
+				61E78B9A1F2DAC1C00CCA7CD /* TXLAddressPickTableView.h */,
+				61E78B9B1F2DAC1C00CCA7CD /* TXLAddressPickTableView.m */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		61E78B2E1F2D8E1A00CCA7CD /* JDAddressNetRequestPicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 61E78B5C1F2D8E1A00CCA7CD /* Build configuration list for PBXNativeTarget "JDAddressNetRequestPicker" */;
+			buildPhases = (
+				61E78B2B1F2D8E1A00CCA7CD /* Sources */,
+				61E78B2C1F2D8E1A00CCA7CD /* Frameworks */,
+				61E78B2D1F2D8E1A00CCA7CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JDAddressNetRequestPicker;
+			productName = JDAddressNetRequestPicker;
+			productReference = 61E78B2F1F2D8E1A00CCA7CD /* JDAddressNetRequestPicker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		61E78B471F2D8E1A00CCA7CD /* JDAddressNetRequestPickerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 61E78B5F1F2D8E1A00CCA7CD /* Build configuration list for PBXNativeTarget "JDAddressNetRequestPickerTests" */;
+			buildPhases = (
+				61E78B441F2D8E1A00CCA7CD /* Sources */,
+				61E78B451F2D8E1A00CCA7CD /* Frameworks */,
+				61E78B461F2D8E1A00CCA7CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				61E78B4A1F2D8E1A00CCA7CD /* PBXTargetDependency */,
+			);
+			name = JDAddressNetRequestPickerTests;
+			productName = JDAddressNetRequestPickerTests;
+			productReference = 61E78B481F2D8E1A00CCA7CD /* JDAddressNetRequestPickerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		61E78B521F2D8E1A00CCA7CD /* JDAddressNetRequestPickerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 61E78B621F2D8E1A00CCA7CD /* Build configuration list for PBXNativeTarget "JDAddressNetRequestPickerUITests" */;
+			buildPhases = (
+				61E78B4F1F2D8E1A00CCA7CD /* Sources */,
+				61E78B501F2D8E1A00CCA7CD /* Frameworks */,
+				61E78B511F2D8E1A00CCA7CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				61E78B551F2D8E1A00CCA7CD /* PBXTargetDependency */,
+			);
+			name = JDAddressNetRequestPickerUITests;
+			productName = JDAddressNetRequestPickerUITests;
+			productReference = 61E78B531F2D8E1A00CCA7CD /* JDAddressNetRequestPickerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		61E78B271F2D8E1A00CCA7CD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = cocomanber;
+				TargetAttributes = {
+					61E78B2E1F2D8E1A00CCA7CD = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = M69WLL7DNH;
+						ProvisioningStyle = Automatic;
+					};
+					61E78B471F2D8E1A00CCA7CD = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = M69WLL7DNH;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 61E78B2E1F2D8E1A00CCA7CD;
+					};
+					61E78B521F2D8E1A00CCA7CD = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = M69WLL7DNH;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 61E78B2E1F2D8E1A00CCA7CD;
+					};
+				};
+			};
+			buildConfigurationList = 61E78B2A1F2D8E1A00CCA7CD /* Build configuration list for PBXProject "JDAddressNetRequestPicker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 61E78B261F2D8E1A00CCA7CD;
+			productRefGroup = 61E78B301F2D8E1A00CCA7CD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				61E78B2E1F2D8E1A00CCA7CD /* JDAddressNetRequestPicker */,
+				61E78B471F2D8E1A00CCA7CD /* JDAddressNetRequestPickerTests */,
+				61E78B521F2D8E1A00CCA7CD /* JDAddressNetRequestPickerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		61E78B2D1F2D8E1A00CCA7CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61E78B421F2D8E1A00CCA7CD /* LaunchScreen.storyboard in Resources */,
+				61E78B3F1F2D8E1A00CCA7CD /* Assets.xcassets in Resources */,
+				61E78B3D1F2D8E1A00CCA7CD /* Main.storyboard in Resources */,
+				61E78B811F2DA87C00CCA7CD /* SVProgressHUD.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61E78B461F2D8E1A00CCA7CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61E78B511F2D8E1A00CCA7CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		61E78B2B1F2D8E1A00CCA7CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61E78B3A1F2D8E1A00CCA7CD /* ViewController.m in Sources */,
+				61E78B871F2DA87C00CCA7CD /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
+				61E78B851F2DA87C00CCA7CD /* TPKeyboardAvoidingScrollView.m in Sources */,
+				61E78B901F2DA92700CCA7CD /* TXLAddress.m in Sources */,
+				61E78B841F2DA87C00CCA7CD /* TPKeyboardAvoidingCollectionView.m in Sources */,
+				61E78B6D1F2DA83200CCA7CD /* UIView+Common.m in Sources */,
+				61E78B991F2DABE300CCA7CD /* TXLAddressPickView.m in Sources */,
+				61E78B371F2D8E1A00CCA7CD /* AppDelegate.m in Sources */,
+				61E78B9C1F2DAC1C00CCA7CD /* TXLAddressPickTableView.m in Sources */,
+				61E78B831F2DA87C00CCA7CD /* SVRadialGradientLayer.m in Sources */,
+				61E78B9F1F2DAC7500CCA7CD /* UIView+Frame.m in Sources */,
+				61E78B821F2DA87C00CCA7CD /* SVProgressHUD.m in Sources */,
+				61E78B961F2DA9D800CCA7CD /* TXLTableCell.m in Sources */,
+				61E78BA21F2DACBC00CCA7CD /* UILabel+Common.m in Sources */,
+				61E78B341F2D8E1A00CCA7CD /* main.m in Sources */,
+				61E78B8D1F2DA91200CCA7CD /* TXLAddrObject.m in Sources */,
+				61E78BA51F2DACF200CCA7CD /* NSString+Common.m in Sources */,
+				61E78B861F2DA87C00CCA7CD /* TPKeyboardAvoidingTableView.m in Sources */,
+				61E78B6A1F2DA65300CCA7CD /* NSObject+ObjectMap.m in Sources */,
+				61E78B931F2DA96300CCA7CD /* TXLAddressPickCell.m in Sources */,
+				61E78B801F2DA87C00CCA7CD /* SVIndefiniteAnimatedView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61E78B441F2D8E1A00CCA7CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61E78B4D1F2D8E1A00CCA7CD /* JDAddressNetRequestPickerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61E78B4F1F2D8E1A00CCA7CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61E78B581F2D8E1A00CCA7CD /* JDAddressNetRequestPickerUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		61E78B4A1F2D8E1A00CCA7CD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 61E78B2E1F2D8E1A00CCA7CD /* JDAddressNetRequestPicker */;
+			targetProxy = 61E78B491F2D8E1A00CCA7CD /* PBXContainerItemProxy */;
+		};
+		61E78B551F2D8E1A00CCA7CD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 61E78B2E1F2D8E1A00CCA7CD /* JDAddressNetRequestPicker */;
+			targetProxy = 61E78B541F2D8E1A00CCA7CD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		61E78B3B1F2D8E1A00CCA7CD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				61E78B3C1F2D8E1A00CCA7CD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		61E78B401F2D8E1A00CCA7CD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				61E78B411F2D8E1A00CCA7CD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		61E78B5A1F2D8E1A00CCA7CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		61E78B5B1F2D8E1A00CCA7CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		61E78B5D1F2D8E1A00CCA7CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = M69WLL7DNH;
+				GCC_PREFIX_HEADER = /Users/cocomanber/Desktop/JDAddressNetRequestPicker/JDAddressNetRequestPicker/PrefixHeader.h;
+				INFOPLIST_FILE = JDAddressNetRequestPicker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cocomanber.JDAddressNetRequestPicker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		61E78B5E1F2D8E1A00CCA7CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = M69WLL7DNH;
+				GCC_PREFIX_HEADER = /Users/cocomanber/Desktop/JDAddressNetRequestPicker/JDAddressNetRequestPicker/PrefixHeader.h;
+				INFOPLIST_FILE = JDAddressNetRequestPicker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cocomanber.JDAddressNetRequestPicker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		61E78B601F2D8E1A00CCA7CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = M69WLL7DNH;
+				INFOPLIST_FILE = JDAddressNetRequestPickerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cocomanber.JDAddressNetRequestPickerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JDAddressNetRequestPicker.app/JDAddressNetRequestPicker";
+			};
+			name = Debug;
+		};
+		61E78B611F2D8E1A00CCA7CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = M69WLL7DNH;
+				INFOPLIST_FILE = JDAddressNetRequestPickerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cocomanber.JDAddressNetRequestPickerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JDAddressNetRequestPicker.app/JDAddressNetRequestPicker";
+			};
+			name = Release;
+		};
+		61E78B631F2D8E1A00CCA7CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = M69WLL7DNH;
+				INFOPLIST_FILE = JDAddressNetRequestPickerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cocomanber.JDAddressNetRequestPickerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = JDAddressNetRequestPicker;
+			};
+			name = Debug;
+		};
+		61E78B641F2D8E1A00CCA7CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = M69WLL7DNH;
+				INFOPLIST_FILE = JDAddressNetRequestPickerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cocomanber.JDAddressNetRequestPickerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = JDAddressNetRequestPicker;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		61E78B2A1F2D8E1A00CCA7CD /* Build configuration list for PBXProject "JDAddressNetRequestPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61E78B5A1F2D8E1A00CCA7CD /* Debug */,
+				61E78B5B1F2D8E1A00CCA7CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		61E78B5C1F2D8E1A00CCA7CD /* Build configuration list for PBXNativeTarget "JDAddressNetRequestPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61E78B5D1F2D8E1A00CCA7CD /* Debug */,
+				61E78B5E1F2D8E1A00CCA7CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		61E78B5F1F2D8E1A00CCA7CD /* Build configuration list for PBXNativeTarget "JDAddressNetRequestPickerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61E78B601F2D8E1A00CCA7CD /* Debug */,
+				61E78B611F2D8E1A00CCA7CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		61E78B621F2D8E1A00CCA7CD /* Build configuration list for PBXNativeTarget "JDAddressNetRequestPickerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61E78B631F2D8E1A00CCA7CD /* Debug */,
+				61E78B641F2D8E1A00CCA7CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 61E78B271F2D8E1A00CCA7CD /* Project object */;
+}
