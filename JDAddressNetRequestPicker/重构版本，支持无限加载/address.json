@@ -1,0 +1,44 @@
+{
+    "type": "address",
+    "coordinates": [{
+                    "name": "北京",
+                    "id": 1,
+                    "child": [{
+                              "name": "东城区",
+                              "id": 1,
+                              "child":[]
+                              }, {
+                              "name": "西城区",
+                              "id": 2,
+                              "child":[]
+                              }]
+                    }, {
+                    "name": "河北",
+                    "id": 2,
+                    "child": [{
+                              "name": "石家庄",
+                              "id": 1,
+                              "child": [{
+                                        "name": "东城区",
+                                        "id": 1,
+                                        "child":[]
+                                        }, {
+                                        "name": "西城区",
+                                        "id": 2,
+                                        "child":[]
+                                        }]
+                              }, {
+                              "name": "唐山",
+                              "id": 2,
+                              "child": [{
+                                        "name": "东城区",
+                                        "id": 1,
+                                        "child":[]
+                                        }, {
+                                        "name": "西城区",
+                                        "id": 2,
+                                        "child":[]
+                                        }]
+                              }]
+                    }]
+}

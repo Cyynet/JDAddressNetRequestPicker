@@ -12,6 +12,8 @@
 #import "TXLTableCell.h"
 #import "TXLAddressPickView.h"
 
+#import "TMAddressViewController.h"
+
 @interface ViewController ()<UITableViewDataSource, UITableViewDelegate, UIActionSheetDelegate>
 
 @property(nonatomic, strong) TPKeyboardAvoidingTableView *mytableView;
@@ -28,12 +30,12 @@
     [super viewDidLoad];
     
     self.title = @"新建收货地址";
-    self.address = [[TXLAddress alloc] init];
+    //self.address = [[TXLAddress alloc] init];
     [self initTable];
     //底部确定按钮
     [self setBottomView];
     //初始化地址选择模块
-    [self handlebackView];
+    //[self handlebackView];
 }
 
 - (void)initTable{
@@ -44,6 +46,7 @@
         tableView.backgroundColor = [UIColor clearColor];
         tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
         [tableView registerClass:[TXLTableCell class] forCellReuseIdentifier:kCellIdentifier_TXLTableCell];
+        [tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"UITableViewCell"];
         [self.view addSubview:tableView];
         tableView;
     });
@@ -108,22 +111,32 @@
     [self.view showSuccess:@"地址创建成功"];
 }
 
-
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 1;
+    return 2;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    TXLTableCell *cell = [tableView dequeueReusableCellWithIdentifier:kCellIdentifier_TXLTableCell forIndexPath:indexPath];
-    cell.selectionStyle = UITableViewCellSelectionStyleNone;
-    if(self.address.provinceId){
-        cell.title = [NSString stringWithFormat:@"%@%@%@",self.address.provinceName,self.address.cityName,self.address.districtName];
+    if (indexPath.row == 0) {
+        TXLTableCell *cell = [tableView dequeueReusableCellWithIdentifier:kCellIdentifier_TXLTableCell forIndexPath:indexPath];
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
+        if(self.address.provinceId){
+            cell.title = [NSString stringWithFormat:@"%@%@%@",self.address.provinceName,self.address.cityName,self.address.districtName];
+        }else{
+            cell.title =  self.address.cityStr.length > 0 ? self.address.cityStr : @"省份城市";
+        }
+        return cell;
     }else{
-        cell.title =  self.address.cityStr.length > 0 ? self.address.cityStr : @"省份城市";
+        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"UITableViewCell"];
+        UILabel *label = [UILabel new];
+        label.text = @"重构版本";
+        label.textColor = [UIColor darkGrayColor];
+        label.font = [UIFont systemFontOfSize:15];
+        label.frame = CGRectMake(10, 0, 300, 45);
+        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+        [cell.contentView addSubview:label];
+        return cell;
     }
-    return cell;
-    
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -131,13 +144,18 @@
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    [self jumpToSelectView];
+    if (indexPath.row == 0) {
+        [self jumpToSelectView];
+    }else{
+        TMAddressViewController *vc = [TMAddressViewController new];
+        vc.title = @"重构版本";
+        [self.navigationController pushViewController:vc animated:YES];
+    }
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
 
 @end

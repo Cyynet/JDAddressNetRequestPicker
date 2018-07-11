@@ -12,14 +12,18 @@
 
 @interface TXLAddressPickView ()<UIScrollViewDelegate>
 
+/* topContent、bomttomContent */
 @property (nonatomic, strong) UIScrollView *headScrollView, *contentScrollView;
+/* 下划线 */
 @property (nonatomic, strong) UIView *underLine;
+/* 当前位置 */
 @property (nonatomic, assign) NSInteger currentIndex;
+/* topLabels */
 @property (nonatomic, strong) UILabel *provinceLabel, *cityLabel, *districtLabel;
+/* tableViews */
 @property (nonatomic, strong) TXLAddressPickTableView *proviceTable, *cityTable, *districtTable;
 
 @end
-
 
 @implementation TXLAddressPickView
 
@@ -32,7 +36,6 @@
         [self initHeadScroll];
         [self initContentScroll];
         [self refresh];
-        
     }
     return self;
 }
@@ -43,17 +46,11 @@
     [self refresh];
 }
 
-
 - (void)refresh {
-    
     [self.proviceTable refresh:nil currentId:self.address.provinceId type:@"province"];
     [self.cityTable refresh:self.address.provinceId currentId:self.address.cityId type:@"city"];
     [self.districtTable refresh:self.address.cityId currentId:self.address.distId type:@"district"];
-    
 }
-
-
-
 
 - (void)initHeadScroll{
     
@@ -90,9 +87,6 @@
     [self.districtLabel addGestureRecognizer:tap3];
     [self.headScrollView addSubview:self.districtLabel];
     
-    
-    
-    
     UIView *line = [[UIView alloc] initWithFrame:CGRectMake(0, 45-1, kScreen_Width, 1)];
     line.backgroundColor = [UIColor colorWithRed:243/255.0 green:243/255.0 blue:243/255.0 alpha:1];
     [self addSubview:line];
@@ -102,7 +96,6 @@
     [line addSubview:self.underLine];
     
     [self updateHead];
-    
 }
 
 - (void)updateUnderLine{
@@ -315,8 +308,6 @@
 }
 
 #pragma mark - UIScrollViewDelegate
-
-
 
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
 {
